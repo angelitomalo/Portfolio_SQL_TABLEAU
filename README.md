@@ -9,6 +9,7 @@ Archivos:
 
 Portfolio Project Covid SQL 2020-2021: Contiene las consultas SQL utilizadas para analizar la información de las bases de datos.
 Portfolio Project Covid TABLEAU querys: Aquí encontrarás las consultas SQL utilizadas para la visualización de datos en Tableau.
+
 Portfolio Project Covid TABLEAU dashboard: Una imagen que muestra el tablero de visualizaciones creado en Tableau. También puedes acceder al tablero completo aquí
 
 https://public.tableau.com/app/profile/angel.alberto.mendoza.l.pez/viz/PortfolioProjectCOVIDTABLEAUviz/Dashboard1
