@@ -10,10 +10,10 @@ Portfolio Project Covid SQL 2020-2021: Contiene las consultas SQL utilizadas par
 
 Portfolio Project Covid TABLEAU querys: Aquí encontrarás las consultas SQL utilizadas para la visualización de datos en Tableau.
 
-Portfolio Project Covid TABLEAU dashboard: Una imagen que muestra el tablero de visualizaciones creado en Tableau. También puedes acceder al tablero completo en este 
+Portfolio Project Covid TABLEAU dashboard: Una imagen que muestra el tablero de visualizaciones creado en Tableau. También puedes acceder al tablero completo aquí
 
-[enlace.](https://public.tableau.com/app/profile/angel.alberto.mendoza.l.pez/viz/PortfolioProjectCOVIDTABLEAUviz/Dashboard1
-)
+https://public.tableau.com/app/profile/angel.alberto.mendoza.l.pez/viz/PortfolioProjectCOVIDTABLEAUviz/Dashboard1
+
 
 Proyecto 2: Limpieza de Datos del Mercado Inmobiliario de Nashville
 El segundo proyecto se basa en datos del mercado inmobiliario de Nashville y se titula "Portfolio Project Nashville Housing SQL CLEANING". En este proyecto, he demostrado mi capacidad para transformar conjuntos de datos, preparándolos para su análisis y utilización práctica.
@@ -24,6 +24,7 @@ Estos proyectos no solo destacan mis habilidades técnicas en SQL y Tableau, sin
 ¡Explora estos proyectos para obtener una visión más profunda de mi experiencia y enfoque en el análisis de datos! Si tienes alguna pregunta o sugerencia, ¡no dudes en contactarme!
 
 Contacto:
+
 www.linkedin.com/in/ángel-alberto-mendoza-lópez-7333026b
 
 angel_aml@live.com.mx
