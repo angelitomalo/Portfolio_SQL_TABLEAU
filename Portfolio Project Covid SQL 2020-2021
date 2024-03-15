@@ -19,7 +19,7 @@ FROM
 ORDER BY 1,2
 
 
--- C·lculo de muertes totales respecto a los casos totales en MÈxico
+-- C√°lculo de muertes totales respecto a los casos totales en M√©xico
 SELECT 
 	location,
 	date,
@@ -31,10 +31,10 @@ FROM
 WHERE
 	location = 'Mexico'
 ORDER BY 1,2 
--- Para el 30 de Abril de 2021 habÌa un 9.25% de probabilidades de morir si te contagiabas de COVID 19 en MÈxico 
+-- Para el 30 de Abril de 2021 hab√≠a un 9.25% de probabilidades de morir si te contagiabas de COVID 19 en M√©xico 
 
 
---C·lculo para mostrar el porcentaje de infectados de la poblaciÛn de MÈxico
+--C√°lculo para mostrar el porcentaje de infectados de la poblaci√≥n de M√©xico
 SELECT 
 	location,
 	date,
@@ -46,9 +46,9 @@ FROM
 WHERE
 	location = 'Mexico'
 ORDER BY 1,2
---Para el 30 de Abril de 2021 el 1.82% de la poblaciÛn estaba infectada de COVID 19 en MÈxico 
+--Para el 30 de Abril de 2021 el 1.82% de la poblaci√≥n estaba infectada de COVID 19 en M√©xico 
 
---C·lculo de los paÌses con mayor tasa de infecciÛn
+--C√°lculo de los pa√≠ses con mayor tasa de infecci√≥n
 SELECT
 	location AS country,
 	MAX(population) AS population,
@@ -59,9 +59,9 @@ WHERE
 	continent IS NOT NULL
 GROUP BY location
 ORDER BY Infection_Percentage DESC;
---Poblaciones pequeÒas como Andorra, Montenegro y Czechia fueron las que tuvieron m·s altos los Ìndices de infecciÛn
+--Poblaciones peque√±as como Andorra, Montenegro y Czechia fueron las que tuvieron m√°s altos los √≠ndices de infecci√≥n
 
---C·lculo de los paÌses con mayor tasa mortalidad
+--C√°lculo de los pa√≠ses con mayor tasa mortalidad
 SELECT
 	location AS country,
 	population,
@@ -72,9 +72,9 @@ WHERE
 	continent IS NOT NULL
 GROUP BY location, population
 ORDER BY Death_Percentage DESC;
---De nueva cuenta, las poblaciones pequeÒas tienen los m·s altos Ìndices de mortalidad
+--De nueva cuenta, las poblaciones peque√±as tienen los m√°s altos √≠ndices de mortalidad
 
---C·lculo para observar los Áontinentes con mayores muertes totales
+--C√°lculo para observar los √ßontinentes con mayores muertes totales
 SELECT
 	location AS continent,
 	MAX(CAST(total_deaths AS INT)) AS TotalDeaths
@@ -83,9 +83,9 @@ WHERE
 	continent IS NULL
 GROUP BY location
 ORDER BY TotalDeaths DESC;
--- Europa y Norte AmÈrica destacan como los continentes con mayores muertes
+-- Europa y Norte Am√©rica destacan como los continentes con mayores muertes
 
---C·lculos globales por fecha
+--C√°lculos globales por fecha
 SELECT
 	date,
 	SUM(new_cases) AS EachDayInfected,
@@ -97,11 +97,11 @@ WHERE
 	continent IS NOT NULL
 GROUP BY date
 ORDER BY 1,2 
--- Para el 30 de Abril de 2021 habÌa un 1.66% de probabilidades de morir si te contagiabas de COVID 19 en el mundo
+-- Para el 30 de Abril de 2021 hab√≠a un 1.66% de probabilidades de morir si te contagiabas de COVID 19 en el mundo
 
 
 
---C·lculo de las personas vacunadas cada dÌa por paÌs hasta el 30 de abril de 2021
+--C√°lculo de las personas vacunadas cada d√≠a por pa√≠s hasta el 30 de abril de 2021
 SELECT 
 	dea.continent, 
 	dea.location, 
@@ -116,7 +116,7 @@ JOIN PortfolioProjectCOVID..CovidVaccinations vac
 WHERE dea.continent IS NOT NULL
 ORDER BY 2,3
 
---C·lculo del porcentaje de la poblaciÛn vacunada utilizando una CTE
+--C√°lculo del porcentaje de la poblaci√≥n vacunada utilizando una CTE
 WITH VaccinatedPopulation (Continent, Location, Date, Population, New_Vaccinations, AccumulatedVaccinations)
 AS
 (
@@ -137,7 +137,7 @@ SELECT *,
 	(AccumulatedVaccinations/Population)*100 AS VaccinatedPopulation
 FROM VaccinatedPopulation
 
---CreaciÛn de una view con las vacunas acumuladas de la poblaciÛn
+--Creaci√≥n de una view con las vacunas acumuladas de la poblaci√≥n
 Create View PercentPopulationVaccinated as
 Select 
 	dea.continent, 
